@@ -45,15 +45,20 @@
 [submodule "apps/DS"]
 	path = apps/DS
 	url = https://github.com:astrogeco/DS.git
+				branch = master
 [submodule "apps/FM"]
 	path = apps/FM
 	url = https://github.com:astrogeco/FM.git
+				branch = master
 [submodule "apps/MD"]
 	path = apps/MD
 	url = https://github.com:astrogeco/MD.git
+				branch = master
 [submodule "apps/HS"]
 	path = apps/HS
 	url = https://github.com:astrogeco/HS.git
+				branch = master
 [submodule "apps/HK"]
 	path = apps/HK
 	url = https://github.com:astrogeco/HK.git
+				branch = master
