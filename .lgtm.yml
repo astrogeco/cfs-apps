@@ -15,6 +15,7 @@ extraction:
       build_command:
       - "cp cfe/cmake/Makefile.sample Makefile"
       - "cp -r cfe/cmake/sample_defs sample_defs"
+      - "cp docker-dir/cpu1_cfe_es_startup.scr sample_defs/cpu1_cfe_es_startup.scr"
+      - "cp docker-dir/targets.cmake sample_defs//targets.cmake"
       - "make prep"
       - "make"
-
