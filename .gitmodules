@@ -44,16 +44,16 @@
         branch = master
 [submodule "apps/DS"]
 	path = apps/DS
-	url = git@github.com:nasa/DS.git
+	url = https://github.com:astrogeco/DS.git
 [submodule "apps/FM"]
 	path = apps/FM
-	url = git@github.com:nasa/FM.git
+	url = https://github.com:astrogeco/FM.git
 [submodule "apps/MD"]
 	path = apps/MD
-	url = git@github.com:nasa/MD.git
+	url = https://github.com:astrogeco/MD.git
 [submodule "apps/HS"]
 	path = apps/HS
-	url = git@github.com:nasa/HS.git
+	url = https://github.com:astrogeco/HS.git
 [submodule "apps/HK"]
 	path = apps/HK
-	url = git@github.com:nasa/HK.git
+	url = https://github.com:astrogeco/HK.git
