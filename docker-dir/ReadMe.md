@@ -1,7 +1,7 @@
 ## Build alpine image
 
 ```
-docker build --tag cfs-bundle:alpine ./docker-dir/alpine/
+docker build --tag cfs-bundle:alpine --file ./docker-dir/alpine/Dockerfile ./
 ```
 
 ## Run alpine image
@@ -25,7 +25,7 @@ This currently breaks at the make step ~50%
 ## Build gcc image
 
 ```
-docker build --tag cfs-bundle:gcc ./docker-dir/gcc-based/
+docker build --tag cfs-bundle:gcc --file ./docker-dir/gcc-based/Dockerfile ./
 ```
 
 ## Run gcc image
