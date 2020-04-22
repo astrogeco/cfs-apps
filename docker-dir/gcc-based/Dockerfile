@@ -35,7 +35,10 @@ RUN make -C $CFS_ROOT
 RUN make -C $CFS_ROOT install
 
 COPY ./docker-dir/test-cfs.sh $CFS_ROOT/test-cfs.sh
+RUN chmod +x $CFS_ROOT/test-cfs.sh
 
 COPY ./docker-dir/targets.cmake $CFS_ROOT/cfe/sample_defs/targets.cmake
 
-RUN chmod +x $CFS_ROOT/test-cfs.sh
+COPY ./docker-dir/cpu1_cfe_es_startup.scr sample_defs/cpu1_cfe_es_startup.scr
+
+COPY ./docker-dir/targets.cmake sample_defs/targets.cmake
