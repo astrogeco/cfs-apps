@@ -36,4 +36,6 @@ RUN make -C $CFS_ROOT install
 
 COPY ./docker-dir/test-cfs.sh $CFS_ROOT/test-cfs.sh
 
+COPY ./docker-dir/targets.cmake $CFS_ROOT/cfe/sample_defs/targets.cmake
+
 RUN chmod +x $CFS_ROOT/test-cfs.sh
