@@ -10,7 +10,7 @@ RUN wget https://github.com/Kitware/CMake/releases/download/v3.15.5/cmake-3.15.5
 ENV PATH="/usr/bin/cmake/bin:${PATH}"
 
 
-# Force image rebuild if bundle has changed since last build 
+# Force image rebuild if bundle has changed since last build
 ADD https://api.github.com/repos/nasa/cfs/git/refs/heads/master version.json
 
 # Get current bundle
@@ -34,6 +34,6 @@ RUN make -C $CFS_ROOT
 
 RUN make -C $CFS_ROOT install
 
-COPY ./test-cfs.sh $CFS_ROOT/test-cfs.sh
+COPY ./docker-dir/test-cfs.sh $CFS_ROOT/test-cfs.sh
 
 RUN chmod +x $CFS_ROOT/test-cfs.sh
